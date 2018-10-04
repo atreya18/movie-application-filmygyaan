@@ -1,9 +1,12 @@
 {{outlet}}
-
+<h2 style="margin:20px">Favourites</h2>
 <div class="container">
-  {{#each model as |movie|}}
-    {{#movie-card movie=movie delete=(action "deleteFavourites") }}
-
-     {{/movie-card}}
-  {{/each}}
+{{#each model as |movie|}}
+ {{#paper-card as |card|}}    
+    <img {{action 'addToDetails' trending}}
+     src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}"
+     style="width:20vw; height:50vh" alt=""/>    
+  {{#paper-button raised=true primary=true onClick=(action 'deleteFavourites' movie)}}Delete from Favourites{{/paper-button}}  
+ {{/paper-card}}
+{{/each}}
 </div>

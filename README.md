@@ -1,7 +1,6 @@
 # movie-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application is build by using Ember and has the functionality of viewing movie details such as the overview and release date of the movies, both trending and upcoming. The TmdB database has been used for the same.
 
 ## Prerequisites
 

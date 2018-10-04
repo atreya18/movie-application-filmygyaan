@@ -9,7 +9,7 @@ export default Controller.extend({
         title: movie.get('title'),
         overview: movie.get('overview')
       });
-      favourite.save();
+      myfavourite.save();
     }
   }
 

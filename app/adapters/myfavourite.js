@@ -8,7 +8,7 @@ export default DS.RESTAdapter.extend({
   },
   createRecord(store, type, snapshot) {
     let data = this.serialize(snapshot, {includeId: true});
-    debugger
+    
 
     return new Promise((resolve, reject) => {
       Em.$.ajax({
@@ -26,7 +26,7 @@ export default DS.RESTAdapter.extend({
   },
   deleteRecord(store, type, snapshot) {
     let data = this.serialize(snapshot);
-    debugger
+    
     return new Promise((resolve, reject) => {
       Em.$.ajax({
         type: "DELETE",
